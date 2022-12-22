@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+       
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>com.admin.loginServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>paymentInsert</servlet-name>
+		<servlet-class>com.payment.paymentInsertServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>paymentInsert</servlet-name>
+		<url-pattern>/pay</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateAdmin</servlet-name>
+		<servlet-class>com.admin.updateAdminServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>updateAdmin</servlet-name>
+		<url-pattern>/updateAction</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+		<servlet-name>deleteAdmin</servlet-name>
+		<servlet-class>com.admin.deleteAdminServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>deleteAdmin</servlet-name>	
+		<url-pattern>/deleteAction</url-pattern>	
+	</servlet-mapping>
+
+</web-app>
